@@ -9,19 +9,20 @@ public class KMToMConverter implements Convertible{
     @Override
     public void setFromValue(double fromValue) {
         // TODO Auto-generated method stub
-        kilometers = fromValue;
+        this.kilometers = fromValue;
     }
 
     @Override
     public double getConvertedValue() {
         // TODO Auto-generated method stub
-        return meters;
+    	this.meters = this.kilometers * 1000;
+        return this.meters;
     }
 
     @Override
     public void convert() {
         // TODO Auto-generated method stub
-        meters = kilometers * 1000;
+        getConvertedValue();
         
     }
     
