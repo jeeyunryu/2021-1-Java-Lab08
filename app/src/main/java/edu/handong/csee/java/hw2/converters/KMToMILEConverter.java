@@ -14,13 +14,14 @@ public class KMToMILEConverter implements Convertible{
 
     @Override
     public double getConvertedValue() {
-       
+    	miles = kilometers / 1.6;
         return miles;
     }
 
     @Override
     public void convert() {
-        miles = kilometers / 1.6;
+    	getConvertedValue();
+        
         
     }
     
