@@ -4,11 +4,11 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 import edu.handong.csee.java.hw2.converters.*; // You will learn the import statement in L11.
-/**IntegratedConverter */
+
 public class IntegratedConverter {
 
     private double fromValue;
-    /**main method */
+
     public static void main(String[] args) {
 
         IntegratedConverter myConverter = new IntegratedConverter();
@@ -47,12 +47,11 @@ public class IntegratedConverter {
         } else {
 
             AllConverter myAllConverter = new AllConverter();
-            // When your method returns `this' in methods of AllConverter, you can call them in this way (method chaining).
-            // Think/understand how and why this work. Study and search for Method chaining
-            // https://stackoverflow.com/questions/21180269/how-to-achieve-method-chaining-in-java
-            // https://www.geeksforgeeks.org/method-chaining-in-java-with-examples/#:~:text=Method%20Chaining%20is%20the%20practice,with%20a%20(dot.).
-            myAllConverter.setFromValue(fromValue).setOriginalMeasure(originalMeasure).convertAndPrintout();
+            // // When your method returns `this' in methods of AllConverter, you can call them in this way (method chaining).
+            // // Think/understand how and why this work. Study and search for Method chaining
+            // // https://stackoverflow.com/questions/21180269/how-to-achieve-method-chaining-in-java
+            // // https://www.geeksforgeeks.org/method-chaining-in-java-with-examples/#:~:text=Method%20Chaining%20is%20the%20practice,with%20a%20(dot.).
+            myAllConverter.setFromValue(fromValue).setOriginalMeasure(originalMeasure).convertAndPrintOut();
         }
     }
 }
-
